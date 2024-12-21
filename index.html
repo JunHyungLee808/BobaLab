@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Food Truck Simulator</title>
+</head>
+<body>
+    <header id="main-banner">
+        <div id="profit-indicator">
+            <strong>Total Profits: $<span id="current-profit">0</span></strong>
+            <p id="profit-gains" class="no-display">You gained $0!</p>
+        </div>
+        <div id="park-status">
+            <h1 class="opaque" id="current-park">Home</h1>
+            <p class="opaque" id="number-of-people"></p>
+            <p class="opaque" id="number-of-food-trucks"></p>
+            <p class="opaque" id="hint"></p>
+        </div>
+        <div id="time-indicator">
+            <strong class="day-indicator">Day <span id="current-day">1</span> of <span id="final-day">5</span></strong>
+            <br>
+            <strong class="hour-indicator">Remaining Hours: <span id="remaining-hours"></span></strong>
+        </div>
+    </header>
+    <main>
+        <div class="flexbox-container">
+            <div id="history-container">
+            </div>      
+            <div id="map">
+            </div>
+        </div>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
